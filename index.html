@@ -11,11 +11,17 @@
   <header class="header">
     <div class="container header-inner">
       <img class="logo" src="assets/images/logo-wr-consultoria bco.png" alt="WR Consultoria" />
-      <div class="container header-inner">
-      <h2><b>Treinos personalizados</b></h2>
-      <h2><b>Acompanhamento semanal</b></h2>
-      <h2><b>Evolução consistente</b></h2>
+
+      <!-- frases transformadas em <p> para o CSS de espaçamento funcionar -->
+      <p><b>Treinos personalizados</b></p>
+      <p><b>Acompanhamento semanal</b></p>
+      <p><b>Evolução consistente</b></p>
+
+      <!-- botão Ver Planos (posicionado com margin-top via CSS) -->
+      <div class="header-actions" style="margin-top:8px;">
+        <a href="#plans" class="btn-primary">Ver Planos</a>
       </div>
+    </div>
   </header>
 
   <main id="container">
@@ -23,27 +29,25 @@
     <!-- ============================
          PRIMEIRO BLOCO — O QUE VOCÊ RECEBE
          ============================ -->
-    <section id="plans-table" style="margin-top:24px">
+    <section id="plans" style="margin-top:24px">
       <div class="flex justify-center mt-3">
-      <article class="card" style="max-width:420px;">
-      <h3 class="section-title">O que você recebe</h3>
+        <article class="card" style="max-width:420px;">
+          <h3 class="section-title">O que você recebe</h3>
 
-      <h1><b>Treino personalizado</b></h1>
-      <h1><b>Troca de treino a cada 2 meses</b></h1>
-      <h1><b>Acompanhamento individual 1x por semana</b></h1>
-      <h1><b>Avaliação de mobilidade, força e postura</b></h1>
+          <h4 style="margin:8px 0 4px;font-weight:700">Treino personalizado</h4>
+          <h4 style="margin:4px 0;font-weight:700">Troca de treino a cada 2 meses</h4>
+          <h4 style="margin:4px 0;font-weight:700">Acompanhamento individual 1x por semana</h4>
+          <h4 style="margin:4px 0;font-weight:700">Avaliação de mobilidade, força e postura</h4>
 
-      <p class="sheet-link">
-        <a href="https://wrconsultoria.github.io/Treino-Patty/" target="_blank" class="link-blue"><b>Planilha de exemplo</b></a>
-      </p>
-    </article>
-  </div>
-</section>
-
+          <p class="sheet-link" style="margin-top:16px">
+            <a href="https://wrconsultoria.github.io/Treino-Patty/" target="_blank" class="link-blue"><b>Planilha de exemplo</b></a>
+          </p>
+        </article>
+      </div>
+    </section>
 
     <!-- ============================
          SEGUNDO BLOCO — PLANOS
-         AGORA COM ID CORRIGIDO
          ============================ -->
     <section id="plans-table" style="margin-top:24px">
       <div class="grid grid-3" style="margin-top:12px">
@@ -51,8 +55,9 @@
         <!-- Plano Básico -->
         <article class="card">
           <h4 style="margin:0;font-weight:700"><b>Básico</b></h4>
-          <p style="color:#6B7280;margin-top:3px">Suporte básico</p>
-          <a href="plano-basico.html" class="btn-link-more" style="margin-top:6px;display:inline-block">Saiba mais</a>
+          <p style="color:#6B7280;margin-top:6px">Suporte básico</p>
+          <!-- links corrigidos para GitHub Pages /Planos/ -->
+          <a href="/Planos/plano-basico.html" class="btn-link-more" style="margin-top:6px;display:inline-block">Saiba mais</a>
 
           <div style="margin-top:12px">
             <div style="font-size:22px;font-weight:800;color:var(--primary)">R$ 199,00 <span style="font-weight:600">/mês</span></div>
@@ -63,7 +68,7 @@
             <div style="font-size:13px"><b>Plano trimestral</b> — Total: R$ 597,00 (3x de R$ 199,00)</div>
           </div>
 
-          <div style="display:flex;gap:4px;margin-top:4px">
+          <div style="display:flex;gap:4px;margin-top:8px">
             <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=cd614c82f1a9472d8e53d2191f6616b2" class="btn" style="background:var(--primary);color:white;flex:1;text-align:center">PIX</a>
             <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=7a7dcee9a6e7499c84e32714e966dca0" class="btn" style="border:1px solid var(--primary);color:var(--primary);flex:1;text-align:center">Recorrente</a>
           </div>
@@ -72,7 +77,7 @@
             <div style="font-size:13px"><b>Plano semestral</b> — Total: R$ 1.140,00 (6x de R$ 190,00)</div>
           </div>
 
-          <div style="display:flex;gap:4px;margin-top:4px">
+          <div style="display:flex;gap:4px;margin-top:8px">
             <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=8bc883c044eb48d3901c861d7c6ffa7f" class="btn" style="background:var(--primary);color:white;flex:1;text-align:center">PIX</a>
             <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=d549b9bffd3b4c219dad02803e2d661d" class="btn" style="border:1px solid var(--primary);color:var(--primary);flex:1;text-align:center">Recorrente</a>
           </div>
@@ -81,8 +86,8 @@
         <!-- Plano Completo -->
         <article class="card">
           <h4 style="margin:0;font-weight:700"><b>Completo</b></h4>
-          <p style="color:#6B7280;margin-top:3px">Suporte intermediário</p>
-          <a href="plano-completo.html" class="btn-link-more" style="margin-top:6px;display:inline-block">Saiba mais</a>
+          <p style="color:#6B7280;margin-top:6px">Suporte intermediário</p>
+          <a href="/Planos/plano-completo.html" class="btn-link-more" style="margin-top:6px;display:inline-block">Saiba mais</a>
 
           <div style="margin-top:12px">
             <div style="font-size:22px;font-weight:800;color:var(--primary)">R$ 249,00 <span style="font-weight:600">/mês</span></div>
@@ -93,7 +98,7 @@
             <div style="font-size:13px"><b>Plano trimestral</b> — Total: R$ 747,00 (3x de R$ 249,00)</div>
           </div>
 
-          <div style="display:flex;gap:4px;margin-top:4px">
+          <div style="display:flex;gap:4px;margin-top:8px">
             <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=00357d1cc45d42ac964e56143212e97d" class="btn" style="background:var(--primary);color:white;flex:1;text-align:center">PIX</a>
             <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=cadfb86ebc4a421eac1c657f4618871c" class="btn" style="border:1px solid var(--primary);color:var(--primary);flex:1;text-align:center">Recorrente</a>
           </div>
@@ -102,7 +107,7 @@
             <div style="font-size:13px"><b>Plano semestral</b> — Total: R$ 1.440,00 (6x de R$ 240,00)</div>
           </div>
 
-          <div style="display:flex;gap:4px;margin-top:4px">
+          <div style="display:flex;gap:4px;margin-top:8px">
             <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=5535e6e3bdda4fe68a13636ce044f8e3" class="btn" style="background:var(--primary);color:white;flex:1;text-align:center">PIX</a>
             <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=7fc131a841c54ac8b4e77f15c8087b30" class="btn" style="border:1px solid var(--primary);color:var(--primary);flex:1;text-align:center">Recorrente</a>
           </div>
@@ -111,8 +116,8 @@
         <!-- Plano Premium -->
         <article class="plan-highlight">
           <h4 style="margin:0;font-weight:700;color:var(--primary)"><b>Premium</b></h4>
-          <p style="color:#6B7280;margin-top:3px">Suporte total</p>
-          <a href="plano-premium.html" class="btn-link-more" style="margin-top:6px;display:inline-block">Saiba mais</a>
+          <p style="color:#6B7280;margin-top:6px">Suporte total</p>
+          <a href="/Planos/plano-premium.html" class="btn-link-more" style="margin-top:6px;display:inline-block">Saiba mais</a>
 
           <div style="margin-top:12px">
             <div style="font-size:28px;font-weight:900;color:var(--primary)">R$ 299,00 <span style="font-weight:600">/mês</span></div>
@@ -123,7 +128,7 @@
             <div style="font-size:13px"><b>Plano trimestral</b> — Total: R$ 897,00 (3x de R$ 299,00)</div>
           </div>
 
-          <div style="display:flex;gap:4px;margin-top:4px">
+          <div style="display:flex;gap:4px;margin-top:8px">
             <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=69368a1afa6b435086e3ba13da0f8022" class="btn" style="background:var(--primary);color:white;flex:1;text-align:center">PIX</a>
             <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=69368a1afa6b435086e3ba13da0f8022" class="btn" style="border:1px solid var(--primary);color:var(--primary);flex:1;text-align:center">Recorrente</a>
           </div>
@@ -132,7 +137,7 @@
             <div style="font-size:13px"><b>Plano semestral</b> — Total: R$ 1.740,00 (6x de R$ 290,00)</div>
           </div>
 
-          <div style="display:flex;gap:4px;margin-top:4px">
+          <div style="display:flex;gap:4px;margin-top:8px">
             <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=8ad8ddcdf7da473ca7171cf385c40202" class="btn" style="background:var(--primary);color:white;flex:1;text-align:center">PIX</a>
             <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=63a46a08d06342129771e8a0f3e8811a" class="btn" style="border:1px solid var(--primary);color:var(--primary);flex:1;text-align:center">Recorrente</a>
           </div>
@@ -185,6 +190,10 @@
     © <span id="year-js"></span> Walmir Corrêa • Consultoria Online • Todos os direitos reservados
   </footer>
 
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+  <script>
+    // preencher o ano automaticamente
+    document.getElementById('year-js').textContent = new Date().getFullYear();
+
+    // ajustar link WhatsApp (troque o número)
+    document.getElementById('whatsapp-btn').href = 'https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20informacoes%20sobre%20os%20planos';
+  </script>
