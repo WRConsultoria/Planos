@@ -80,7 +80,7 @@ body{
   background:transparent;
 }
 
-.logo{height:150px;max-width:360px;width:auto;object-fit:contain}
+.logo{height:225px;max-width:540px;width:auto;object-fit:contain}
 
 /* garante que main inicie abaixo do header fixo */
 body.main-page #container{ padding-top: calc(var(--header-height) + 8px); margin-top:0 }
